@@ -799,7 +799,7 @@ sub setCoordicates
 	$end = $#{$coords} + 1 if ($end <= 0);
 
 	for (my $i = $start - 1; $i < $end ; $i++) {
-		if ($coords->[$i][2] == "") {
+		if ($coords->[$i][2] == ""){
 			$coords->[$i][2] = -9999;
 		}
 		$str .= join(' ', @{$coords->[$i]}) . ', ';
